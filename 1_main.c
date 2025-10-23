@@ -10,5 +10,4 @@ int main()
     float f=c*9/5+32;
     printf("%.1f华摄氏度",f);
     return 0;
-    
 }
