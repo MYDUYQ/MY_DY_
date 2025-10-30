@@ -2,12 +2,18 @@
 //my070310@163.com
 //李雪峰
 #include <stdio.h>
+
 int main()
 {
-int a,b,c;
-scanf("%d %d %d",&a,&b,&c);
-if(a+b>c&&a-b<c)
-{printf("能组成三角形");}
-else{printf("不能组成三角形");}
-return 0;
+   int m=100;
+   while(m<=999)
+   {int a=m%10;
+   int b=m/10%10;
+   int c=m/100;
+    if (m==a*a*a+b*b*b+c*c*c)
+   {
+    printf("%d\n",m);
+   }m++;}
+   
+    return 0;
 }
