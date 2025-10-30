@@ -6,24 +6,16 @@
 int main()
 {
     int a;
-    int b;
-    char ch;
-    printf("请输入两个个整数和一个运算符");
-    scanf("%d %d %c",&a,&b,&ch);
-    switch (ch)
+    printf("请输入一个<50的正整数");
+    scanf("%d",&a);
+    if (a==1){
+        printf("密钥不安全，请重新输入");
+        return 0;
+    }int i=2;
+    while (a%i==0)
     {
-    case '+':
-       printf("结果是%d",a+b);
-        break;
-        case '-':
-       printf("结果是%d",a-b);
-        break;
-        case '*':
-       printf("结果是%d",a*b);
-        break;
-        case '/':
-       printf("结果是%d",a/b);
-        break;
-    }
-return 0;
-}
+         i<=a;i++;
+    printf("密钥不安全，请重新输入"); return 0;  }
+    printf("密钥安全，密码设置成功");
+    return 0;
+} 
