@@ -2,12 +2,16 @@
 //my070310@163.com
 //李雪峰
 #include <stdio.h>
+
 int main()
 {
-    float c=0;
-    printf("请输入摄氏度（度）");
-    scanf("%f",&c);
-    float f=c*9/5+32;
-    printf("%.1f华摄氏度",f);
-    return 0; 
+    int a,i;
+    printf("请输入一个<50的正整数");
+    scanf("%d",&a);
+    for(i=2;i<a;i++){
+    if (a%i==0)
+    {printf("密钥不安全，请重新输入"); return 0;  }}
+    printf("密钥安全，密码设置成功");
+    
+    return 0;
 }
