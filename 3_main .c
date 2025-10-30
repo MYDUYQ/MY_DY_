@@ -5,25 +5,17 @@
 
 int main()
 {
-    int a;
-    int b;
-    char ch;
-    printf("请输入两个个整数和一个运算符");
-    scanf("%d %d %c",&a,&b,&ch);
-    switch (ch)
-    {
-    case '+':
-       printf("结果是%d",a+b);
-        break;
-        case '-':
-       printf("结果是%d",a-b);
-        break;
-        case '*':
-       printf("结果是%d",a*b);
-        break;
-        case '/':
-       printf("结果是%d",a/b);
-        break;
-    }
-return 0;
+   int m;
+   for (m=100;m<=999;m++)
+   {
+   int a=m%10;
+   int b=m/10%10;
+   int c=m/100;
+   if (m==a*a*a+b*b*b+c*c*c)
+   {
+    printf("%d\n",m);
+   
+   }}
+   
+    return 0;
 }
