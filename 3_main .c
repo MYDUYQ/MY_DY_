@@ -13,7 +13,7 @@ int main()
    int c=m/100;
    if (m==a*a*a+b*b*b+c*c*c)
    {
-    printf("%d",m);
+    printf("%d ",m);
    
    }}
    
