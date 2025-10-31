@@ -3,25 +3,23 @@
 //李雪峰
 #include <stdio.h>
 
-int main()
-{
-   int  a[5]={0};
-   int b=0;
-   int c;
-   while (b<5)
-   { scanf("%d",&c);
-    if (c%2==0)
-    {
-        a[b]=c;
-        b++;
+int main() {
+    int a[5]; 
+    int count = 0; 
+    int num;  
+    while (count < 5) {
+        scanf("%d", &num);
+        if (num % 2 == 0) {
+            a[count] = num;
+            count++;  
+        }
     }
-    for (int i=0;i<5;i++)
-    {
-        printf("%d",a[i]);
-        if (i<4){
-            printf(" ");
-        };
-    } 
-   } 
+    for (int i = 0; i < 5; i++) {
+        if (i == 4) {
+            printf("%d", a[i]);  
+        } else {
+            printf("%d ", a[i]); 
+        }
+    }
     return 0;
 }
