@@ -2,7 +2,6 @@
 //my070310@163.com
 //李雪峰
 #include <stdio.h>
-
 int main()
 {
     int arr[3][3];
