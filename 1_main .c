@@ -5,17 +5,16 @@
 
 int main()
 {
-    int a,i;
-    printf("请输入一个<50的正整数");
-    scanf("%d",&a);
-    if (a==1){
-        printf("密钥不安全，请重新输入");
-        return 0;
+    int arr[3][3];
+    for (int i=0;i<3;i++)
+    {
+       for (int j=0;j<3;j++)
+       {scanf ("%d",&arr[i][j]);}
     }
-    for(i=2;i<a;i++){
-    if (a%i==0)
-    {printf("密钥不安全，请重新输入"); return 0;  }}
-    printf("密钥安全，密码设置成功");
+    for (int i=0;i<3;i++)
+    {
+       for (int j=0;j<3;j++){printf("%d ",arr[i][j]);}
     
+    printf("\n");}
     return 0;
 }
