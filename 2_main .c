@@ -5,17 +5,16 @@
 
 int main()
 {
-   int m;
-   for (m=100;m<=999;m++)
-   {
-   int a=m%10;
-   int b=m/10%10;
-   int c=m/100;
-   if (m==a*a*a+b*b*b+c*c*c)
-   {
-    printf("%d ",m);
-   
-   }}
-   
+    int arr[3][3];
+    for (int j=0;j<3;j++)
+    {
+       for (int i=0;i<3;i++)
+       {scanf ("%d",&arr[i][j]);}
+    }
+    for (int i=0;i<3;i++)
+    {
+       for (int j=0;j<3;j++){if (j==0){printf("%d",arr[i][j]);}else{printf(" %d",arr[i][j]);}}
+    
+    printf("\n");}
     return 0;
 }
