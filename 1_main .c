@@ -3,27 +3,18 @@
 //李雪峰
 #include <stdio.h>
 
-int main() {
-    int matrix[3][3];
-    
-    // 输入
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            scanf("%d", &matrix[i][j]);
-        }
+int main()
+{
+    int arr[3][3];
+    for (int i=0;i<3;i++)
+    {
+       for (int j=0;j<3;j++)
+       {scanf ("%d",&arr[i][j]);}
     }
+    for (int i=0;i<3;i++)
+    {
+       for (int j=0;j<3;j++){if (j==0){printf("%d",arr[i][j]);}else{printf(" %d",arr[i][j]);}}
     
-    // 输出：每行元素间空格，行末无多余空格
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            if (j == 0) {
-                printf("%d", matrix[i][j]); // 第一个元素直接输出
-            } else {
-                printf(" %d", matrix[i][j]); // 后续元素前加空格
-            }
-        }
-        printf("\n"); // 每行结束后换行
-    }
-    
+    printf("\n");}
     return 0;
 }
