@@ -4,18 +4,24 @@
 #include <stdio.h>
 
 int main()
-{
-    int a;
-    printf("请输入一个<50的正整数");
-    scanf("%d",&a);
-    if (a==1){
-        printf("密钥不安全，请重新输入");
-        return 0;
-    }int i=2;
-    while (a%i==0)
+{int arr[10],i,j,t;
+    for(i=0;i<10;i++)
+    {scanf("%d",&arr[i]);}
+    for (i=0;i<9;i++)
     {
-         i<=a;i++;
-    printf("密钥不安全，请重新输入"); return 0;  }
-    printf("密钥安全，密码设置成功");
+       for (j=0;j<9;j++)
+       {
+        if(arr[j]>arr[j+1])
+        {t=arr[j+1];arr[j+1]=arr[j];
+            arr[j]=t;
+        }
+       }
+       
+    }
+ for (i = 0; i <10; i++)
+ {
+   printf("%d ",arr[i]);
+ }
+    
     return 0;
-} 
+}
