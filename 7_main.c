@@ -2,7 +2,7 @@
 //my070310@163.com
 //李雪峰
 #include <stdio.h>
-int one ()
+void one ()
 {
     int a[5];
     for (int i = 0; i <5; i++)
