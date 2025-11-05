@@ -9,10 +9,10 @@ void one ()
 {
 scanf("%d",&a[i]);
 }
-for(int i;i<2;i++)
+for(int i=0;i<2;i++)
 {
-    int b;
-    b=a[i];
+    
+   int  b=a[i];
     a[i]=a[4-i];
     a[4-i]=b;
 }
@@ -21,7 +21,8 @@ for(int i;i<2;i++)
             printf("%d", a[i]);  
         } else {
             printf("%d ", a[i]); 
-        }}
+        }
+    }
 }
 int main()
 {
