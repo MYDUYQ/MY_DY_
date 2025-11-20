@@ -9,6 +9,6 @@ int main()
     scanf ("%d",&a);
     int *ptr=&a;
     *ptr=*ptr+10;
-    printf("%d %d",a,*ptr);
+    printf("%d,%d",a,*ptr);
     return 0;
 }
