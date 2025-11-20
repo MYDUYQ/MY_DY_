@@ -2,30 +2,26 @@
 //my070310@163.com
 //李雪峰
 #include <stdio.h>
-void one ()
-{
-    int a[5];
-    for (int i = 0; i <5; i++)
-{
-scanf("%d",&a[i]);
-}
-for(int i=0;i<2;i++)
-{
-    
-   int  b=a[i];
-    a[i]=a[4-i];
-    a[4-i]=b;
-}
- for (int i = 0; i < 5; i++) {
-        if (i == 4) {
-            printf("%d", a[i]);  
-        } else {
-            printf("%d ", a[i]); 
-        }
-    }
-}
+
 int main()
-{
-    one();
+{int arr[10],i,j,t;
+    for(i=0;i<10;i++)
+    {scanf("%d",&arr[i]);}
+    for (i=0;i<9;i++)
+    {
+       for (j=0;j<9;j++)
+       {
+        if(arr[j]>arr[j+1])
+        {t=arr[j+1];arr[j+1]=arr[j];
+            arr[j]=t;
+        }
+       }
+       
+    }
+ for (i = 0; i <10; i++)
+ {
+   printf("%d ",arr[i]);
+ }
+    
     return 0;
 }
