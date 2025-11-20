@@ -5,16 +5,10 @@
 
 int main()
 {
-    int arr[3][3];
-    for (int i=0;i<3;i++)
-    {
-       for (int j=0;j<3;j++)
-       {scanf ("%d",&arr[i][j]);}
-    }
-    for (int i=0;i<3;i++)
-    {
-       for (int j=0;j<3;j++){if (j==0){printf("%d",arr[i][j]);}else{printf(" %d",arr[i][j]);}}
-    
-    printf("\n");}
+    int a;
+    scanf ("%d",&a);
+    int *ptr=&a;
+    *ptr=*ptr+10;
+    printf("%d %d",a,*ptr);
     return 0;
 }
