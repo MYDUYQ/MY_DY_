@@ -2,22 +2,29 @@
 //my070310@163.com
 //李雪峰
 #include <stdio.h>
-int one(int a,int b)
+void swap()
+{{
+    int a[5];
+    for (int i = 0; i <5; i++)
 {
-    int c=1;
-    for(int i=0;i<b;i++)
-    {//c=c*a
-        c*=a;
-    }
-    return c;
+scanf("%d",&a[i]);
+}
+int *prt=a;
+for (int  i = 0; i < 5; i++)
+{
+    *prt=*prt+1;
+    prt++;
+}
+prt=a;
+ for (int i = 0; i <5; i++)
+{
+printf("%d ",*prt);
+prt ++;
+}  
+}
 }
 int main()
 {
-    int d=0;
-    for(int i=1;i<6;i++)
-    {
-        d+=one(i,2);
-    }
-    printf("%d\n",d);
+    swap();
     return 0;
 }
