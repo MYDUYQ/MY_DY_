@@ -5,16 +5,23 @@
 
 int main()
 {
-    int arr[3][3];
-    for (int j=0;j<3;j++)
-    {
-       for (int i=0;i<3;i++)
-       {scanf ("%d",&arr[i][j]);}
-    }
-    for (int i=0;i<3;i++)
-    {
-       for (int j=0;j<3;j++){if (j==0){printf("%d",arr[i][j]);}else{printf(" %d",arr[i][j]);}}
-    
-    printf("\n");}
+    int a[5];
+    for (int i = 0; i <5; i++)
+{
+scanf("%d",&a[i]);
+}
+int *prt=a;
+for (int  i = 0; i < 5; i++)
+{
+    *prt=*prt*2;
+    prt++;
+}
+prt=a;
+ for (int i = 0; i <5; i++)
+{
+printf("%d ",*prt);
+prt ++;
+}
+
     return 0;
 }
